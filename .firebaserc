@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "my-application-77533"
+  },
+  "targets": {
+    "my-application-77533": {
+      "hosting": {
+        "my-application": [
+          "my-application-77533"
+        ]
+      }
+    }
+  }
+}

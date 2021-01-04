@@ -1,0 +1,24 @@
+<div class="login-box">
+    <h2 id="login-heading">Login</h2>
+    <form (ngSubmit)="login()">
+      <div class="user-box">
+        <input type="email" name="email" [(ngModel)]="email" required="true">
+        <label>Email</label>
+      </div>
+      <div class="user-box">
+        <input type="password" name="password" [(ngModel)]="password" required="true">
+        <label>Password</label>
+      </div>
+      <button type="submit" class="btn btn-primary">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Submit
+    </button>
+    </form>
+    <div class="form-group">
+        <p *ngIf="errorMessage.length > 0" class="text-danger">{{errorMessage}}</p>
+        <p *ngIf="error.message.length > 0" class="text-danger">{{error.message}}</p>
+    </div>
+  </div>

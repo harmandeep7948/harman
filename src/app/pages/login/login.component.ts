@@ -61,5 +61,6 @@ export class LoginComponent implements OnInit {
     this.errorMessage = '';
     return true;
   }
+  // just for testing
 
 }
